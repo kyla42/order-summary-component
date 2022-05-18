@@ -62,6 +62,7 @@
 
             .price {
                 width: 16.5rem;
+                line-height: 2.6rem;
                 align-items: flex-start;
 
                 @include u.bp(sm) {
