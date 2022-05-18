@@ -53,10 +53,11 @@ a {
     font-size: 1.4rem;
     font-weight: 900;
     transform: scaleY(1.04);
-    transition: color .3s ease;
+    transition: all .3s ease;
 
     &:hover {
         color: hsla(245, 75%, 52%, 0.7);
+        text-decoration: none;
     }
 
     @include bp(sm) {
