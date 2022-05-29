@@ -5,6 +5,7 @@
     height: 100vh;
     background: url(../images/pattern-background-desktop.svg) no-repeat;
     background-size: contain;
+    @extend %fx-ai-c;
 
     @include u.bp(sm) {
         background: url(../images/pattern-background-mobile.svg) no-repeat;
@@ -28,7 +29,7 @@
     &__image {
         height: 22rem;
         background: url(../images/illustration-hero.svg) no-repeat center;
-        background-size: contain;
+        background-size: cover;
         border-radius: 2rem 2rem 0 0;
 
         @include u.bp(sm) {
@@ -38,9 +39,14 @@
 
     &__info {
         padding: 4.5rem 4.8rem;
+        @extend %fxcol, %fx-ai-c;
 
         @include u.bp(sm) {
             padding: 3rem 2.2rem 2rem 2.2rem;
+        }
+
+        .summary {
+            @extend %fxcol, %fx-ai-c;
         }
 
         .plan {
@@ -50,6 +56,7 @@
             margin: 2rem 0;
             background-color: u.$c-VeryPaleBlue;
             border-radius: 1.5rem;
+            @extend %fx-jc-sb, %fx-ai-c;
 
             @include u.bp(sm) {
                 height: 8rem;
@@ -58,6 +65,10 @@
 
             img {
                 height: 4.8rem;
+            }
+
+            p {
+                @extend %fxcol;
             }
 
             .price {

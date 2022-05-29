@@ -78,8 +78,8 @@ a {
     cursor: pointer;
 }
 
-
-.fx {
+// flex -extend
+%fx {
     display: flex;
 
     &-jc-c {
@@ -96,15 +96,9 @@ a {
         display: flex;
         align-items: center;
     }
+}
 
-    &-jcai-c {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    &-d-col {
-        display: flex;
-        flex-direction: column;
-    }
+%fxcol {
+    display: flex;
+    flex-direction: column;
 }
